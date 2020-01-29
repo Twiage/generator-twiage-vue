@@ -55,5 +55,10 @@ module.exports = class extends Generator {
       this.destinationPath(`tests/unit/${name}/ui/${name}.spec.js`),
       { name }
     );
+    this.fs.copyTpl(
+      this.templatePath("tests__unit__service__specs.ejs"),
+      this.destinationPath(`tests/unit/${name}/service/${name}.spec.js`),
+      { name }
+    );
   }
 };
