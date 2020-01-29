@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Thiago F",
+      "authorEmail": "tfigueiredo@twiage.net",
+      "authorUrl": ""
+    }
+  }
+}

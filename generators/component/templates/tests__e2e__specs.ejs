@@ -1,0 +1,6 @@
+describe("<%= name %> Page", () => {
+  it("Can visit the URL", () => {
+    cy.visit("/<%= name.toLowerCase() %>");
+    cy.contains("h1", "<%= name %>");
+  });
+});

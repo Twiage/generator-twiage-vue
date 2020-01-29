@@ -1,0 +1,10 @@
+import { shallowMount } from '@vue/test-utils';
+import <%= name %> from '@/<%= name %>/ui/<%= name %>.vue';
+
+describe('<%= name %>.vue', () => {
+  it('has a failing test to start TDD', () => {
+    const wrapper = shallowMount(<%= name %>);
+
+    expect(wrapper.contains('foo')).toBe(true);
+  });
+});
