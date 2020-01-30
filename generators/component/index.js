@@ -57,7 +57,7 @@ module.exports = class extends Generator {
       : `tests/unit/App/components`;
     this.fs.copyTpl(
       this.templatePath(`tests__unit__specs.ejs`),
-      this.destinationPath(`${testDestinationPath}/${name}.spec.js`),
+      this.destinationPath(`${testDestinationPath}/${name}.spec.ts`),
       {
         name,
         sourcePath: sourceDestinationPath.replace("src", "@")

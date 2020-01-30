@@ -29,11 +29,11 @@ module.exports = class extends Generator {
 
     this.fs.copyTpl(
       this.templatePath("src__service__service.ejs"),
-      this.destinationPath(`src/${name}/service/${name}.service.js`)
+      this.destinationPath(`src/${name}/service/${name}.service.ts`)
     );
     this.fs.copyTpl(
       this.templatePath("src__store__store.js.ejs"),
-      this.destinationPath(`src/${name}/store/${name}.store.js`)
+      this.destinationPath(`src/${name}/store/${name}.store.ts`)
     );
     this.fs.copyTpl(
       this.templatePath("src__ui__ui.vue.ejs"),
@@ -52,12 +52,12 @@ module.exports = class extends Generator {
     );
     this.fs.copyTpl(
       this.templatePath("tests__unit__specs.ejs"),
-      this.destinationPath(`tests/unit/${name}/ui/${name}.spec.js`),
+      this.destinationPath(`tests/unit/${name}/ui/${name}.spec.ts`),
       { name }
     );
     this.fs.copyTpl(
       this.templatePath("tests__unit__service__specs.ejs"),
-      this.destinationPath(`tests/unit/${name}/service/${name}.spec.js`),
+      this.destinationPath(`tests/unit/${name}/service/${name}.spec.ts`),
       { name }
     );
   }
